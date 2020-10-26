@@ -2,14 +2,11 @@ digitList = []
 for i in range (0, 10) :
     digitList.append (i)
 
-atLeastOne = True
-while atLeastOne :
-    atLeastOne = False
+for j in range(10):
     for i in range (len (digitList)) :
-        if (digitList[i] == -1) :
-            print (" ", end="")
+        print (digitList[i], end="")
+        if (digitList[i] == 0 or digitList[i] == " ") :
+            digitList[i] = " "
         else :
-            print (digitList[i], end="")
             digitList[i] -= 1
-            atLeastOne = True
     print ()

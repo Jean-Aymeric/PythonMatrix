@@ -1,4 +1,5 @@
 import random
+import time
 
 digitList = []
 for i in range (0, 100) :
@@ -13,3 +14,4 @@ while atLeastOne :
             digitList[i] -= 1
             atLeastOne = True
     print ()
+    time.sleep(0.02)

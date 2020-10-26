@@ -1,6 +1,8 @@
+import random
+
 digitList = []
-for i in range (0, 10) :
-    digitList.append (i)
+for i in range (0, 100) :
+    digitList.append (random.randint(0,9))
 
 atLeastOne = True
 while atLeastOne :

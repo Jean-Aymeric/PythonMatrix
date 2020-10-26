@@ -4,7 +4,7 @@ for i in range (0, 10) :
 
 for i in range (len (digitList)) :
     print (digitList[i], end="")
-    if (digitList[i] == " " or digitList[i] == 0) :
+    if (digitList[i] == 0) :
         digitList[i] = " "
     else :
         digitList[i] -= 1

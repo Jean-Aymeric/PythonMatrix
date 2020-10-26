@@ -3,10 +3,10 @@ for i in range (0, 10) :
     digitList.append (i)
 
 for i in range (len (digitList)) :
-    if (digitList[i] == -1) :
-        print (" ", end="")
+    print (digitList[i], end="")
+    if (digitList[i] == " " or digitList[i] == 0) :
+        digitList[i] = " "
     else :
-        print (digitList[i], end="")
         digitList[i] -= 1
 print ()
 print(digitList)

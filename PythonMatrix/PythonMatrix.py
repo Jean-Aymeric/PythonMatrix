@@ -10,7 +10,7 @@ while atLeastOne :
     atLeastOne = False
     for i in range (len (digitList)) :
         print (chr(digitList[i]), end="")
-        if (digitList[i] >= 32) :
+        if (digitList[i] > 32) :
             digitList[i] -= 1
             atLeastOne = True
     print ()
